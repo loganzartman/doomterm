@@ -3,8 +3,9 @@
 
 ![animation](doomterm.gif)
 
-## Dependencies
-0. termpixels (`pip install termpixels`)
+## Running
+0. Get termpixels (`pip install termpixels`)
+1. `python doomterm.py`
 
 [termpixels]: https://github.com/loganzartman/termpixels
 [doompost]: http://fabiensanglard.net/doom_fire_psx/
