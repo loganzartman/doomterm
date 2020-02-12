@@ -1,4 +1,5 @@
-from termpixels import App, Color
+from termpixels import Color
+from termpixels.app import LegacyApp
 from random import randint
 
 # http://fabiensanglard.net/doom_fire_psx/
@@ -25,7 +26,7 @@ COLOR_MAP = [Color(i[0], i[1], i[2]) for i in [
     (0xB7,0xB7,0x37), (0xCF,0xCF,0x6F), (0xDF,0xDF,0x9F), (0xEF,0xEF,0xC7),
     (0xFF,0xFF,0xFF)]]
 
-class DoomTerm(App):
+class DoomTerm(LegacyApp):
     def __init__(self):
         super().__init__(framerate=24)
 
@@ -71,5 +72,5 @@ class DoomTerm(App):
         self.screen.update()
 
 if __name__ == "__main__":
-    DoomTerm().start()
+    DoomTerm().run()
 
